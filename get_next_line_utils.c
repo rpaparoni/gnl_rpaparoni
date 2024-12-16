@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:14:13 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/11/11 11:58:59 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/12/16 18:28:52 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,22 +40,6 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	ft_strlcpy(s3, s1, s1_len + 1);
 	ft_strlcat(s3, s2, s1_len + s2_len + 1);
 	return (s3);
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] == (unsigned char)c)
-			return ((char *)&s[i]);
-		i++;
-	}
-	if ((unsigned char)c == '\0')
-		return ((char *)&s[i]);
-	return (NULL);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:13:57 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/12/16 18:02:45 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/12/16 18:25:28 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,19 @@
 #  define BUFFER_SIZE 32
 # endif
 
+# include <stdlib.h>
+# include <unistd.h>
 # include <fcntl.h>
-# include <cstddef>
+# include <stdio.h>
 
 char	*get_next_line(int fd);
-
-char	*ft_strdup(const char *s);
-char	*ft_strjoin(const char *s1, const char *s2);
-char	*ft_strchr(const char *s, int c);
-char	*ft_substr(const char *s, unsigned int start, size_t len);
-size_t	ft_strlen(const char *s);
+char	*stash_filling(int fd, char *stash, char *buffer);
+char	*extract_line(char *stash);
+char	*extract_new_stash(char *stash);
+char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strchr(char *s, int c);
+char	*ft_strdup(char *s1);
+size_t	ft_strlen(char *s);
 
 #endif
 
