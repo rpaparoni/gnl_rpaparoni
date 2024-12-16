@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:13:57 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/11/11 14:22:20 by rpaparon         ###   ########.fr       */
+/*   Updated: 2024/12/16 18:02:45 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # endif
 
 # include <fcntl.h>
+# include <cstddef>
 
 char	*get_next_line(int fd);
 
