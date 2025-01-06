@@ -6,7 +6,7 @@
 /*   By: rpaparon <rpaparon@student.42madrid.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:13:57 by rpaparon          #+#    #+#             */
-/*   Updated: 2024/12/16 18:25:28 by rpaparon         ###   ########.fr       */
+/*   Updated: 2025/01/06 13:37:59 by rpaparon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,3 @@ char	*ft_strdup(char *s1);
 size_t	ft_strlen(char *s);
 
 #endif
-
